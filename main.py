@@ -29,7 +29,7 @@ selected_company = st.selectbox(
 ticker = nifty_data[nifty_data["Company Name"] == selected_company]["Ticker"].values[0]
 selected_stock = st.selectbox("Select dataset for prediction", [ticker])
 
-n_years = st.slider("Years of Prediction:", 1, 4)
+n_years = st.slider("Years of Prediction:", 1, 5)
 period = n_years * 365
 
 @st.cache_data
